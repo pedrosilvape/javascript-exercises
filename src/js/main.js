@@ -1,6 +1,7 @@
 import { runEvenOdd } from './exercises/even-odd.js'
 import { runAgeChecker } from './exercises/age-checker.js'
 import { runGradeCalculator } from './exercises/grade-calculator.js'
+import { runNumChecker } from './exercises/num-checker.js'
 const exerciseSelect = document.querySelector('#exercise');
 const runButton = document.querySelector('#run-exercise');
 
@@ -15,5 +16,7 @@ runButton.addEventListener('click', () => {
         return runAgeChecker();
     } else if (selectedExercise === 'grade-calculator') {
         return runGradeCalculator();
-    }
+    } else if (selectedExercise === 'num-checker') {
+        return runNumChecker();
+    } 
 });
